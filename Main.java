@@ -24,8 +24,7 @@ public class Main {
     	accountMaker.close();
     }
     public static void loginCheck() throws IOException {
-        File UserInfo = new File("C:\\Users\\abhin\\eclipse-workspace\\Java\\src\\"
-                 + "main\\java\\UserInfo.txt"); // enter username, password in 
+        File UserInfo = new File("user.txt"); // enter username, password in the file, space separated on same line, username or password cannot have spaces
          try (Scanner sc = new Scanner(System.in)) {
 			try (Scanner scFile = new Scanner(UserInfo)) {
 				HashMap<String, String> map = new HashMap<String, String>();
